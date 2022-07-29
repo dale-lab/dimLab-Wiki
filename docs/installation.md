@@ -1,7 +1,12 @@
 
-**environement name**: dimlab-env
+# Installing dimLab
 
-## First Steps
+After installing all of the previous softwares in [Quick Start](quickstart.md "Quick Start"), proceed to open a terminal and run the following commands:
+
+>[!Warning|style:flat]
+> Make sure to select the correct setup based on your computer configuration.
+
+## In the Terminal
 <!-- tabs:start -->
 
 #### **<span style="color: Blue;"><b>CPU</b></span>**
@@ -17,9 +22,8 @@ pip install "napari[all]"
 
 
 ```bash
-conda create -n <project-name> -c conda-forge python=3.9
-conda activate <project-name>
-conda install -c conda-forge pyopencl
+conda create -n dimlab-env -c conda-forge python=3.9
+conda activate dimlab-env
 conda install pytorch=1.8.2 cudatoolkit=10.2 -c pytorch-lts
 conda install cudnn
 pip install "napari[all]"
@@ -28,7 +32,9 @@ pip install "napari[all]"
 <!-- tabs:end -->
 
 ## After installing the correct environment
-Move to the folder **dimLab**:
+Go to the folder **dimLab**:
+
+> 🤖💭 Usually you will find this folder in <code>~/Documents/GitHub/dimLab/</code>
 
 ```bash
 conda activate dimlab-env
